@@ -65,6 +65,11 @@ header a {
   padding: 6px;
   border-radius: 50%;
   color: #333;
+  transition: all .3s;
+}
+.workout-details span:hover{
+  background-color: var(--primary);
+  color: #fff;
 }
 
 /* new workout form */
@@ -79,15 +84,24 @@ input {
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
+  transition: all .3s;
+}
+input:hover{
+  border-color: var(--primary);
 }
 form button {
   background: var(--primary);
-  border: 0;
+  border: 1px solid var(--primary);
   color: #fff;
   padding: 10px;
   font-family: "Poppins";
   border-radius: 4px;
   cursor: pointer;
+  transition: all .3s;
+}
+form button:hover{
+  background-color: #fff;
+  color: var(--primary);
 }
 div.error {
   padding: 10px;
