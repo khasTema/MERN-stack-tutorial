@@ -1,4 +1,9 @@
  const User = require('../models/userModel')
+ const jwt = require('jsonwebtoken') // package to create secret tocken for identification of users
+
+ const createToken = (_id) => {
+   jwt.sign({_id}, process.env.SECRET, { expiresIn: '3d' })
+ }
  
  // login user
 
