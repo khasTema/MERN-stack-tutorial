@@ -12,6 +12,10 @@ const Login = () => {
         e.preventDefault()
 
         await login(email, password )
+
+        // clear input form
+        setEmail('')
+        setPassword('')
     }
 
   return (

@@ -11,6 +11,10 @@ const Signup = () => {
         e.preventDefault()
 
         await signup(email, password)
+
+        // clear input form
+        setEmail('')
+        setPassword('')
     }
 
   return (
